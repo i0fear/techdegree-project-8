@@ -59,7 +59,7 @@ function displayModal(index) {
         <p class="tel">${phone}</p>
         <p class="address">${street.number} ${street.name} <br> ${city}, ${state} ${postcode}</p>
         <p class="birthday">Birthday:
-        ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
+        ${String(date.getMonth()+1).padStart(2,0)}/${String(date.getDate()).padStart(2,0)}/${date.getFullYear()}</p>
         </div> 
         
     `;

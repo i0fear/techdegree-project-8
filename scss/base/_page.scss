@@ -33,12 +33,16 @@ header{
     // background: darkgrey;
 
 }
+.avatar{
+    border-radius: 50%;
+    margin-right: 20px;
+}
 
 .card{
     width: 100%;
     display: flex;
-    // flex-wrap: wrap;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    
     // min-width: 315px;
     // max-width: 450px;
     gap: 25px;
@@ -46,13 +50,13 @@ header{
     border: 1px solid bisque;
     background: lightgray;
     border-radius: 10px;
-    .avatar{
-        border-radius: 50%;
-        margin-right: 20px;
-    }
+    
+    
     .text-container{
+        
         float: right;
         text-align: left;
+        align-self: center;
     }
 }
 .card:hover {

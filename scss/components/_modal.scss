@@ -1,11 +1,13 @@
 
 /*|| modal */ 
 .overlay{
+    position: absolute;
     top:0;
     left:0;
     right:0;
     bottom: 0;
     background: rgba(100, 100, 100, 0.4);
+    
 }
 
 .modal{
@@ -19,10 +21,23 @@
     padding: 30px 20px;
 }
 .modal-close{
+    width: 25px;
+    height: 25px;
+    content: "X";
+    font-size: larger;
     position:absolute;
     right: 15px;
     top:5px;
     cursor: pointer;
+    background: rgba(223, 36, 26, 0.178);
+    
+}
+.modal-close::after{
+    right: 10px;
+    top: 5px;
+    content: "X";
+    color: black;
+    
 }
 .hidden{
     display: none;
